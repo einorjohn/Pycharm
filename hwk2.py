@@ -1,8 +1,7 @@
-all_freq = {}
-count = "lol"
-for i in count:
-    if i in all_freq:
-        all_freq[i] += 1
-    else:
-        all_freq[i] = 1
-print("Count of all characters:\n " +  str(all_freq))
+str = "X-DSPAM-Confidence:0.8475"
+find = str.find(":")
+after = len(str)
+number = str[find+1: after]
+float_number = float(number)
+
+print(float_number)
